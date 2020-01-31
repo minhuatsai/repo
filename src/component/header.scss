@@ -1,0 +1,23 @@
+.componentcontainer-header{
+    display:flex;
+    align-items: center;
+    padding:20px;
+    border-bottom: 0.0625rem solid #eee;
+    box-shadow: 0 0 0.3125rem #b0a0ad;
+    
+    .imgcontainer-logo{
+        width:30%;
+    }
+    .navbar{
+        display:flex;
+        list-style-type: none;
+        width:70%;
+        margin: 0;
+        justify-content: flex-end;
+
+        li{
+            padding:0 10px;
+            color: rgba(0,0,0,.5);
+        }
+    }
+}
