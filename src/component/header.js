@@ -12,7 +12,21 @@ const Header = (props)=>{
         <ul className="navbar">
             {
                 staticData.navbar.map((list,i)=>{
-                    return <li key={`navbar${i}`}>{list.title}</li>
+                    return(
+                      <li key={`navbar${i}`}>
+                        <a href={list.url}>
+                          {
+                            list.fontIcon && 
+                            <i className={list.fontIcon} />
+                          }  
+                          {list.title}
+                          {
+                            list.remind &&
+                            <span className="animate-sharp-red">{list.remind}</span>
+                          }
+                        </a>
+                      </li>
+                    )
                 })
             }
         </ul>

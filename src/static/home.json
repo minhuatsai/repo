@@ -5,60 +5,35 @@
         },
         "navbar":[
             {
-                "title":"線上課程",
-                "url":"/",
-                "remind":{
-                    "disable":true,
-                    "content":""
-                }
+                "url":"https://iamcoding.tw/",
+                "title":" 線上課程",
+                "fontIcon":"far fa-gem"
             },
             {
-                "title":"ASTRO Camp",
-                "url":"/",
-                "remind":{
-                    "disable":false,
-                    "content":"報名優惠中"
-                }
+                "url":"https://astro.5xruby.tw/",
+                "title":" ASTRO Camp",
+                "fontIcon":"far fa-gem",
+                "remind":"報名優惠中"
             },
             {
-                "title":"短期課程",
-                "url":"/",
-                "remind":{
-                    "disable":true,
-                    "content":""
-                }
+                "url":"https://5xruby.tw/talks/",
+                "title":" 短期課程"
             },
             {
-                "title":"專案開發",
-                "url":"/",
-                "remind":{
-                    "disable":true,
-                    "content":""
-                }
+                "url":"https://dev.5xruby.tw",
+                "title":" 專案開發"
             },
             {
-                "title":"企業代訓",
-                "url":"/",
-                "remind":{
-                    "disable":true,
-                    "content":""
-                }
+                "url":"https://5xruby.tw/training",
+                "title":" 企業代訓"
             },
             {
-                "title":"空間租借",
-                "url":"/",
-                "remind":{
-                    "disable":true,
-                    "content":""
-                }
+                "url":"https://5xruby.tw/space",
+                "title":" 空間租借"
             },
             {
-                "title":"最新消息",
-                "url":"/",
-                "remind":{
-                    "disable":true,
-                    "content":""
-                }
+                "url":"https://5xruby.tw/posts",
+                "title":" 最新消息"
             }
         ]
     },
@@ -168,7 +143,128 @@
                         "profession":"連續創業家，自由工作者"
                     }
                 ]
+            },
+            "portfolio":{
+                "title":"案例作品 Showcase",
+                "listData":[
+                    {
+                        "imgSrc":"https://5xruby.tw/assets/images/showcases/space_next_door-4dfdfeb6.png",
+                        "mainTitle":"SpaceNextDoor",
+                        "description":"Space Next Door is inspired by the sharing economy in which we hope to encourage people to put up their unused space so that users looking for personal or business storage space have better options, closer to where they need it. We are striving to build a trusted community marketplace for you to list, discover and book the nearest and best space at affordable prices."
+                    },
+                    {
+                        "imgSrc":"https://5xruby.tw/assets/images/showcases/shopmatic_go-f7b86d46.png",
+                        "mainTitle":"Shopmatic Go app",
+                        "description":"Shopmatic Go is an exciting online platform where you can create a unique and comprehensive online store for your business, in a matter of minutes."
+                    },
+                    {
+                        "imgSrc":"https://5xruby.tw/assets/images/showcases/shopmatic-92ff9dcf.jpg",
+                        "mainTitle":"跨境電子商務 Shopmatic",
+                        "description":"Shopmatic manages the entire ecosystem for anyone wanting to sell online. We go the extra mile to ensure that we help you in every step of the process to grow your business online - from developing your own unique webstore, to listing you on marketplaces and social channels, to providing you insights on how to sell online."
+                    }
+                ],
+                "moreLink":{
+                    "url":"https://5xruby.tw/showcases/",
+                    "content":"...更多案例"
+                }
+            },
+            "knowUs":{
+                "title":"想更瞭解我們嗎？",
+                "description":"您可以看看*常見問題~https://5xruby.tw/faq/*或者直接*線上洽詢~https://5xruby.tw/contacts/*，會有親切的客服人員回答您的問題，也可以透過社群網站隨時關注我們的動態。",
+                "socialMedia":[
+                    {
+                        "url":"https://www.facebook.com/5xruby",
+                        "imgSrc":"https://5xruby.tw/assets/images/index/icon/icon-fb-2f24e7a0.png"
+                    },
+                    {
+                        "url":"https://twitter.com/5xruby",
+                        "imgSrc":"https://5xruby.tw/assets/images/index/icon/icon-twitter-89f8d087.png"
+                    }
+                ]
             }
+        }
+    },
+    "footer":{
+        "mediaReport":{
+            "url":"https://5xruby.tw/press/",
+            "imgSrc":"https://5xruby.tw/assets/images/footer/press-img-3161693e.png"
+        },
+        "cakeResume":{
+            "url":"https://www.cakeresume.com/jobs",
+            "imgSrc":"https://5xruby.tw/assets/images/footer/cakeresume-8938f367.png",
+            "description":"找工作"
+        },
+        "menu":[
+            {
+                "url":"https://5xruby.tw/about/",
+                "title":"關於五倍紅寶石"
+            },
+            {
+                "url":"https://5xruby.tw/press/",
+                "title":"媒體報導"
+            },
+            {
+                "url":"https://5xruby.tw/members/",
+                "title":"團隊成員"
+            },
+            {
+                "url":"https://5xruby.tw/contacts/",
+                "title":"聯絡詢價"
+            },
+            {
+                "url":"https://5xruby.tw/faq/",
+                "title":"常見問題"
+            },
+            {
+                "url":"https://5xruby.tw/jobs/",
+                "title":"工作機會"
+            },
+            {
+                "url":"https://github.com/5xRuby",
+                "title":"開源專案"
+            },
+            {
+                "url":"https://5xruby.tw/privacy-policy/",
+                "title":"隱私權條款"
+            },
+            {
+                "url":"https://5xruby.tw/terms-of-service/",
+                "title":"服務條款"
+            }
+        ],
+        "contactInfo":{
+            "phone":"02-2331-5247",
+            "workTime":"Mon - Fri / 09:30 - 22:00",
+            "socialMedia":[
+                {
+                    "url":"https://www.facebook.com/5xruby",
+                    "fontIcon":"fab fa-facebook-f"
+                },
+                {
+                    "url":"https://twitter.com/5xruby",
+                    "fontIcon":"fab fa-twitter"
+                },
+                {
+                    "url":"https://github.com/5xruby",
+                    "fontIcon":"fab fa-github"
+                }
+            ]
+        },
+        "mailAddress":{
+            "title":"有任何問題？",
+            "mail":{
+                "url":"mailto:hi@5xruby.tw",
+                "content":"hi@5xruby.tw"
+            },
+            "address":{
+                "title":"地址： ",
+                "url":"https://goo.gl/lz5v93",
+                "content":"10046 台北市中正區衡陽路 7 號 5 樓"
+            }
+        },
+        "copyright":{
+            "description":"© 2014 - 2020 五倍紅寶石股份有限公司 (5XRUBY CO., LTD)",
+            "case":"台北市短期補習班立案 第 7594 號"
         }
     }
 }
