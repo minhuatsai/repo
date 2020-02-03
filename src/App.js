@@ -4,6 +4,7 @@ import staticDataHome from './static/home.json';
 import Header from './component/header';
 import Footer from './component/footer';
 import {routes} from "./router-setting";
+
 class App extends Component{
   render(){
     return(

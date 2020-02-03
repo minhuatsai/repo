@@ -1,0 +1,36 @@
+
+.contacts-info-container{
+    width:40%;
+    max-width: 500px;
+    margin-right: 5%;
+
+    .contacts-info{
+        list-style-type: none;
+        padding-left:0;
+        display: flex;
+        flex-wrap: wrap;
+
+        >li{
+            width:50%;
+        }
+    }
+}
+.contacts-form{
+    width:40%;
+    max-width: 500px;
+
+    form{
+        .reCAPTCHA-container{
+            margin: 20px 0;
+        }
+        input{
+            &[type=submit]{
+                cursor: pointer;
+                color:#fff;
+                background-color: #d90845;
+                padding:20px 0;
+                outline: none;
+            }
+        }
+    }
+}
