@@ -43,7 +43,7 @@ const KnowUs = (props) =>{
             socialMedia.map((list,i)=>{
               return(
                 <a key={`socialMedia_${i}`} href={list.url}>
-                  <img src={list.imgSrc} />
+                  <img src={list.imgSrc} alt={`socialMedia_${i}`}/>
                 </a>
               )
             })
@@ -65,7 +65,7 @@ const Portfolio = (props) =>{
           listData.map((list,i) => {
             return(
               <div key={`section-content-list_${i}`} className="section-content-list list-style-card">
-                <div className="imgcontainer-sectionlist"><img src={list.imgSrc} /></div>
+                <div className="imgcontainer-sectionlist"><img src={list.imgSrc} alt={`imgcontainer-sectionlist_${i}`}/></div>
                 <h4>{list.mainTitle}</h4>
                 <p>
                   {list.description}
@@ -100,7 +100,7 @@ const OnlineCourses = (props) =>{
             listData.map((list,i) => {
               return(
                 <div key={`section-content-list_${i}`} className="section-content-list list-style-carousel">
-                  <div className="imgcontainer-sectionlist"><img src={list.imgSrc} /></div>
+                  <div className="imgcontainer-sectionlist"><img src={list.imgSrc} alt={`section-content-list_${i}`}/></div>
                   <div className="carousel-introduction-container">
                     <p>{list.feedback}</p>
                     <span className="author">{list.author}</span>
@@ -127,7 +127,7 @@ const PopularCourses = (props) =>{
           listData.map((list,i) => {
             return(
               <div key={`section-content-list_${i}`} className="section-content-list list-style-card">
-                <div className="imgcontainer-sectionlist"><img src={list.imgSrc} /></div>
+                <div className="imgcontainer-sectionlist"><img src={list.imgSrc} alt={`section-content-list_${i}`} /></div>
                 <h4>{list.mainTitle}</h4>
                 <div className="course-date">
                   {
@@ -172,7 +172,7 @@ const About5xRuby = (props) =>{
           listData.map((list,i) => {
             return(
               <div key={`section-content-list_${i}`} className="section-content-list">
-                <div className="imgcontainer-sectionlist"><img src={list.imgSrc} /></div>
+                <div className="imgcontainer-sectionlist"><img src={list.imgSrc} alt={`section-content-list_${i}`}/></div>
                 <h3>{list.mainTitle}</h3>
                 <h3>{list.secondaryTitle}</h3>
                 <p>{list.description}</p>
@@ -195,7 +195,7 @@ const CarouselContainer = ()=>{
         staticDataHome.maincontent.carousel.map((imgList,i)=>{
           return(
             <div key={`carousel${i}`}>
-              <img src={imgList} />
+              <img src={imgList} alt={`carousel${i}`}/>
             </div>
           )
         })
@@ -207,7 +207,6 @@ class Home extends Component{
   render(){
     return(
       <div className="pagecontainer-home">
-          {/* <Header staticData={staticDataHome.header}/> */}
           <div className="maincontent">
             <CarouselContainer />
             <About5xRuby id="about5xRuby" />
@@ -216,7 +215,6 @@ class Home extends Component{
             <Portfolio id="portfolio" />
             <KnowUs id="knowUs" />
           </div>
-          {/* <Footer staticData={staticDataHome.footer}/> */}
       </div>
     )
   }

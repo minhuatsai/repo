@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import './footer.scss';
 
 const Footer = (props)=>{
@@ -9,10 +10,10 @@ const Footer = (props)=>{
         <div className="footer-content">
             <div className="advertisement-link">
                 <a className="media-report" href={staticData.mediaReport.url}>
-                    <img src={staticData.mediaReport.imgSrc} />
+                    <img src={staticData.mediaReport.imgSrc} alt={`media-report`}/>
                 </a>
                 <a className="cakeresume" href={staticData.cakeResume.url}>
-                    <img src={staticData.cakeResume.imgSrc} />
+                    <img src={staticData.cakeResume.imgSrc} alt={`cakeresume`}/>
                     <span>{staticData.cakeResume.description}</span>
                 </a>
             </div>
@@ -22,9 +23,15 @@ const Footer = (props)=>{
                         staticData.menu.map((list,i)=>{
                             return(
                                 <li key={`footerMenu_${i}`}>
-                                    <a href={list.url}>
-                                        {list.title}
-                                    </a>
+                                    {
+                                        list.url.indexOf("/contacts") >=0 
+                                        ?
+                                            <Link to={list.url}>{list.title}</Link>
+                                        :
+                                            <a href={list.url}>
+                                                {list.title}
+                                            </a>
+                                    }
                                 </li>
                             )
                         })

@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import {BrowserRouter,Switch,Route,Link} from 'react-router-dom';
+import {BrowserRouter,Switch,Route} from 'react-router-dom';
 import staticDataHome from './static/home.json';
 import Header from './component/header';
 import Footer from './component/footer';
@@ -9,15 +9,9 @@ class App extends Component{
   render(){
     return(
       <div className="pagecontainer-home">
-          <Header staticData={staticDataHome.header}/>
           <div className="maincontent">
-            {/* <CarouselContainer />
-            <About5xRuby id="about5xRuby" />
-            <PopularCourses id="popularCourses" />
-            <OnlineCourses id="onlineCourses" />
-            <Portfolio id="portfolio" />
-            <KnowUs id="knowUs" /> */}
             <BrowserRouter>
+              <Header staticData={staticDataHome.header}/>
               <Switch>
                 {
                   routes.map((routeData,i)=>{
@@ -27,9 +21,9 @@ class App extends Component{
                   })
                 }
               </Switch>
+              <Footer staticData={staticDataHome.footer}/>
             </BrowserRouter>
           </div>
-          <Footer staticData={staticDataHome.footer}/>
       </div>
     )
   }

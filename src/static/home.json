@@ -1,39 +1,54 @@
 {
     "header":{
         "imgcontainer":{
+            "url":"/",
             "src":"https://5xruby.tw/assets/images/navbar/logo-c473f739.png"
         },
         "navbar":[
             {
-                "url":"https://iamcoding.tw/",
-                "title":" 線上課程",
-                "fontIcon":"far fa-gem"
+                "url":"/iamcoding",
+                "title":"線上課程",
+                "fontIcon":"far fa-gem",
+                "breadcrumbPath":"首頁 > 線上課程",
+                "headerDescription":"為你自己把程式學好"
             },
             {
-                "url":"https://astro.5xruby.tw/",
-                "title":" ASTRO Camp",
-                "fontIcon":"far fa-gem",
+                "url":"/astro_camp",
+                "title":"ASTRO Camp",
+                "fontIcon":"far fa-compass fa-lg",
+                "breadcrumbPath":"首頁 > ASTRO Camp",
+                "headerDescription":"轉職最佳選擇，就是全端工程師",
                 "remind":"報名優惠中"
             },
             {
-                "url":"https://5xruby.tw/talks/",
-                "title":" 短期課程"
+                "url":"/shortcourse",
+                "title":"短期課程",
+                "breadcrumbPath":"首頁 > 短期課程",
+                "headerDescription":"前端網頁設計及後端課程"
             },
             {
-                "url":"https://dev.5xruby.tw",
-                "title":" 專案開發"
+                "url":"/projectdevelop",
+                "title":"專案開發",
+                "breadcrumbPath":"首頁 > 專案開發",
+                "headerDescription":"五倍紅寶石你最佳的技術夥伴"
             },
             {
-                "url":"https://5xruby.tw/training",
-                "title":" 企業代訓"
+                "url":"companytraining",
+                "title":"企業代訓",
+                "breadcrumbPath":"首頁 > 企業代訓",
+                "headerDescription":"企業內訓 現有人力=即戰力"
             },
             {
-                "url":"https://5xruby.tw/space",
-                "title":" 空間租借"
+                "url":"/spacelease",
+                "title":"空間租借",
+                "breadcrumbPath":"首頁 > 空間租借",
+                "headerDescription":"五倍紅寶石 台北出礦坑"
             },
             {
-                "url":"https://5xruby.tw/posts",
-                "title":" 最新消息"
+                "url":"/latestnews",
+                "title":" 最新消息",
+                "breadcrumbPath":"首頁 > 最新消息",
+                "headerDescription":"最新消息"
             }
         ]
     },
@@ -208,7 +223,7 @@
                 "title":"團隊成員"
             },
             {
-                "url":"https://5xruby.tw/contacts/",
+                "url":"/contacts",
                 "title":"聯絡詢價"
             },
             {
