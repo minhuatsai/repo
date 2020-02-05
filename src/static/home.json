@@ -224,7 +224,9 @@
             },
             {
                 "url":"/contacts",
-                "title":"聯絡詢價"
+                "title":"聯絡詢價",
+                "breadcrumbPath":"首頁 > 聯絡我們",
+                "headerDescription":"有任何問題嗎？馬上聯絡我們！"
             },
             {
                 "url":"https://5xruby.tw/faq/",
