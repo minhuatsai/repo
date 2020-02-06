@@ -40,6 +40,8 @@ class Contacts extends Component {
   onSubmitHandle(event) {
     if (this.reCAPTCHA_bool) {
       this.handleOpenModal();
+    } else{
+      alert("請勾選我不是機器人認證")
     }
     event.preventDefault();
   }
