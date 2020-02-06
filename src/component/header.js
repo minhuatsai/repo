@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink,Link } from 'react-router-dom';
 import './header.scss';
 
 const Header = (props) => {
@@ -14,31 +14,31 @@ const Header = (props) => {
       </div>
       <ul className="navbar">
         {
-                staticData.navbar.map((list, i) => (
-                  <li key={`navbar${i}`}>
-                    <Link to={
-                          {
-                            pathname: list.url,
-                            state: {
-                              breadcrumbPath: list.breadcrumbPath,
-                              headerDescription: list.headerDescription,
-                            },
-                          }
-                        }
-                    >
-                      {
-                            list.fontIcon
-                            && <i className={list.fontIcon} />
-                          }
-                      {list.title}
-                      {
-                            list.remind
-                            && <span className="animate-sharp-red">{list.remind}</span>
-                          }
-                    </Link>
-                  </li>
-                ))
-            }
+          staticData.navbar.map((list, i) => (
+            <li key={`navbar${i}`}>
+              <NavLink to={
+                  {
+                    pathname: list.url,
+                    state: {
+                      breadcrumbPath: list.breadcrumbPath,
+                      headerDescription: list.headerDescription,
+                    },
+                  }
+                }
+              >
+                {
+                  list.fontIcon
+                  && <i className={list.fontIcon} />
+                }
+                {list.title}
+                {
+                  list.remind
+                  && <span className="animate-sharp-red">{list.remind}</span>
+                }
+              </NavLink>
+            </li>
+          ))
+        }
       </ul>
     </div>
   );

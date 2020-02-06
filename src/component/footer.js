@@ -52,12 +52,12 @@ const Footer = (props) => {
               <div className="contact-worktime">{staticData.contactInfo.workTime}</div>
               <div className="contact-social-media">
                 {
-                                staticData.contactInfo.socialMedia.map((list, i) => (
-                                  <a key={`socialMedia_${i}`} href={list.url}>
-                                    <i className={`media-icon ${list.fontIcon}`} />
-                                  </a>
-                                ))
-                            }
+                  staticData.contactInfo.socialMedia.map((list, i) => (
+                    <a key={`socialMedia_${i}`} href={list.url}>
+                      <i className={`media-icon ${list.fontIcon}`} />
+                    </a>
+                  ))
+                }
               </div>
             </div>
             <div className="mail-address">

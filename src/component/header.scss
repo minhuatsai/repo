@@ -54,6 +54,9 @@
                 color:#d90845;
             }
             a{
+                &.active{
+                    color:#d90845;
+                }
                 svg{
                     padding:0 5px;
                 }
